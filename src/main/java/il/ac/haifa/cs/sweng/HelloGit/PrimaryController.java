@@ -35,7 +35,7 @@ public class PrimaryController {
 
     @FXML
     void click(ActionEvent event) {
-
+    	field.setText("Hello Git");
     }
     
     // Pay attention to this example - You don't have to specify parameters on event handlers.
