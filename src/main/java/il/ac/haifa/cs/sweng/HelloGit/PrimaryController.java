@@ -9,6 +9,8 @@ import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
 import javafx.stage.Stage;
+import javafx.scene.control.Button;
+import javafx.scene.control.TextField;
 
 public class PrimaryController {
 
@@ -23,6 +25,17 @@ public class PrimaryController {
     	Scene scene = new Scene(parent);
     	dialogStage.setScene(scene);
     	dialogStage.show();
+    }
+
+    @FXML // fx:id="clickBtn"
+    private Button clickBtn; // Value injected by FXMLLoader
+
+    @FXML // fx:id="field"
+    private TextField field; // Value injected by FXMLLoader
+
+    @FXML
+    void click(ActionEvent event) {
+
     }
     
     // Pay attention to this example - You don't have to specify parameters on event handlers.
